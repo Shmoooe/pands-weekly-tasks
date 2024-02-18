@@ -1,37 +1,26 @@
-# D I S A S T E R
-
-
-# A program that asks the user to input any positive integer
-# and ouputs the successive values of the following calculation.
-# At each step it will calculate the next value by taking the current value and
-# if it is even, divide it by two
-# but if it's odd, multiply it by three and one.
-# The program will end if the current value is one.
+# A program that reads in a positive integer and perfroms the collatz conjecture.
+# The program ends when it reaches one.
 
 # Author: Joanna Kelly
 
-# list_of_numbers = []
+# My idea is to create a while loop with if statements to preform the dividing, multiplying and addition.
+# I will need to append the calculated results to a list, to be displayed at the end of the program.
+# I will need to figure out how to format the list to print it in the specified way.
 
-# number = int(input("Please enter a positive integer: "))
+number = int(input("Please enter a positive integer: "))
 
-def collatz(number):
-        if (number % 2) == 0:
-            result = number // 2
-        elif (number % 2) != 0:
-            result = 3 * number + 1
+numbers = []
 
-        while result == 1:
-             print(result)
-             sys.exit()
+while number != 1:
+    if (number % 2) == 0:                  #Even numbers
+         number = number // 2              #Now I'm not sure what to do here.
 
-        while result != 1:
-             print(result)
-             number = result
-             return collatz(number)
+    elif (number % 2) != 0:                #Odd numbers
+         number = (3 * number) + 1         #I consulted chatGPT about these specific parts of the if/else statements
+    numbers.append(number)                 #as I'd only seen print statements after an if statement
+
+for x in numbers:
+     print(x, end=" ")                     #Consulted ChatGPT for this too to learn about end=   
+
+
         
-print("Enter a positive integer: ")
-
-
-# list_of_numbers.append(number)
-
-#print([list_of_numbers])

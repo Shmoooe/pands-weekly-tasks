@@ -20,7 +20,7 @@ while number != 1:
     numbers.append(number)                 #as I'd only seen print statements after an if statement
 
 for x in numbers:
-     print(x, end=" ")                     #Consulted ChatGPT for this too to learn about end=   
+     print(x, end=" ")                     #Consulted ChatGPT for this too to learn about end=" "   
 
 
         

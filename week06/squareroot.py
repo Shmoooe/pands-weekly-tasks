@@ -6,7 +6,7 @@
 
 # number = original number
 # guess = approx square root (number/2)
-# the difference in the approx root value needs to be less than the precision value
+# the difference in the approx root values needs to be less than the precision value
 # so we need to set a precision value
 
 
@@ -16,7 +16,7 @@ def sqrt(number, precision = 10 **(-10)):
         new_guess = (guess + number / guess) / 2  # Newton's method requires us to keep reiterating this formula until we arrive at the closest value to the actual square root.
         if abs(new_guess - guess) < precision:  # abs() returns the absolute value or positive value
             return new_guess
-        guess = new_guess       # the original guess becomes the "new_guess" until the difference between the guess and the new guess is less than the precision value
+        guess = new_guess       # the new guess becomes the "original guess" until the difference between the guess and the new guess is less than the precision value
 
 
 

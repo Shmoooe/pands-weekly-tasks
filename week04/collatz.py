@@ -13,14 +13,14 @@ numbers = []
 
 while number != 1:
     if (number % 2) == 0:                  #Even numbers
-         number = number // 2              #Now I'm not sure what to do here.
+         number = number // 2              
 
     elif (number % 2) != 0:                #Odd numbers
-         number = (3 * number) + 1         #I consulted chatGPT about these specific parts of the if/else statements
-    numbers.append(number)                 #as I'd only seen print statements after an if statement
+         number = (3 * number) + 1         
+    numbers.append(number)                #.append will add to our list
 
 for x in numbers:
-     print(x, end=" ")                     #Consulted ChatGPT for this too to learn about end=" "   
+     print(x, end=" ")                    # prints a space between the integers in the list   
 
 
         
